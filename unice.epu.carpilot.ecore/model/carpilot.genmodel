@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/unice.epu.carpilot.ecore/src-gen" creationIcons="false"
+    editDirectory="/unice.epu.carpilot.ecore.edit/src-gen" editorDirectory="/unice.epu.carpilot.ecore.editor/src-gen"
+    modelPluginID="unice.epu.carpilot.ecore" modelName="Carpilot" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="10.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>carpilot.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Carpilot" basePackage="unice.epu.carpilot.ecore" disposableProviderFactory="true"
+      ecorePackage="carpilot.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carpilot.ecore#//Direction">
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Direction/forward"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Direction/left"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Direction/right"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Direction/backward"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Direction/stop"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carpilot.ecore#//Camera">
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Camera/very_right"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Camera/very_left"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Camera/left"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Camera/right"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Camera/center"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carpilot.ecore#//Color">
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Color/red"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Color/blue"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Color/orange"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Color/black"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Color/white"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Color/building"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carpilot.ecore#//Sensor">
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Sensor/front"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Sensor/distance_left"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//Sensor/distance_right"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carpilot.ecore#//AnalogOperand">
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//AnalogOperand/greater"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//AnalogOperand/greaterEquals"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//AnalogOperand/equals"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//AnalogOperand/notequals"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//AnalogOperand/lowerEquals"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//AnalogOperand/lower"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="carpilot.ecore#//NumericOperand">
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//NumericOperand/equals"/>
+      <genEnumLiterals ecoreEnumLiteral="carpilot.ecore#//NumericOperand/notequals"/>
+    </genEnums>
+    <genClasses ecoreClass="carpilot.ecore#//Car">
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference carpilot.ecore#//Car/rules"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference carpilot.ecore#//Car/orders"/>
+    </genClasses>
+    <genClasses ecoreClass="carpilot.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carpilot.ecore#//NamedElement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="carpilot.ecore#//Rule">
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference carpilot.ecore#//Rule/condition"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference carpilot.ecore#//Rule/effect"/>
+    </genClasses>
+    <genClasses ecoreClass="carpilot.ecore#//Condition"/>
+    <genClasses ecoreClass="carpilot.ecore#//Command">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carpilot.ecore#//Command/direction"/>
+    </genClasses>
+    <genClasses ecoreClass="carpilot.ecore#//ColorCondition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carpilot.ecore#//ColorCondition/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carpilot.ecore#//ColorCondition/camera"/>
+    </genClasses>
+    <genClasses ecoreClass="carpilot.ecore#//RuleEffect"/>
+    <genClasses ecoreClass="carpilot.ecore#//CommandEffect">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carpilot.ecore#//CommandEffect/command"/>
+    </genClasses>
+    <genClasses ecoreClass="carpilot.ecore#//DistanceCondition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carpilot.ecore#//DistanceCondition/sensor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carpilot.ecore#//DistanceCondition/distance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carpilot.ecore#//DistanceCondition/operator"/>
+    </genClasses>
+    <genClasses ecoreClass="carpilot.ecore#//AbilityEffect">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carpilot.ecore#//AbilityEffect/direction"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute carpilot.ecore#//AbilityEffect/disable"/>
+    </genClasses>
+    <genClasses ecoreClass="carpilot.ecore#//PersistingRule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference carpilot.ecore#//PersistingRule/stop"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

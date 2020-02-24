@@ -1,0 +1,10 @@
+	// BeginInjectInto unice.epu.carpilot.kermeta.RuleEffectAspect#CarAction apply(CarAction) from unice.epu.carpilot.kermeta.AbilityEffectAspect
+		if (_self instanceof unice.epu.carpilot.ecore.carpilot.AbilityEffect){
+			result = unice.epu.carpilot.kermeta.AbilityEffectAspect.apply((unice.epu.carpilot.ecore.carpilot.AbilityEffect)_self,action);
+		} else
+		// EndInjectInto unice.epu.carpilot.kermeta.RuleEffectAspect#CarAction apply(CarAction) from unice.epu.carpilot.kermeta.AbilityEffectAspect
+	// BeginInjectInto unice.epu.carpilot.kermeta.RuleEffectAspect#CarAction reverse(CarAction) from unice.epu.carpilot.kermeta.AbilityEffectAspect
+		if (_self instanceof unice.epu.carpilot.ecore.carpilot.AbilityEffect){
+			result = unice.epu.carpilot.kermeta.AbilityEffectAspect.reverse((unice.epu.carpilot.ecore.carpilot.AbilityEffect)_self,action);
+		} else
+		// EndInjectInto unice.epu.carpilot.kermeta.RuleEffectAspect#CarAction reverse(CarAction) from unice.epu.carpilot.kermeta.AbilityEffectAspect

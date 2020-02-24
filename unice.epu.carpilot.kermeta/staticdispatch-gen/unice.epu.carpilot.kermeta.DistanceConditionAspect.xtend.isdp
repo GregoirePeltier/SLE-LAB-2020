@@ -1,0 +1,5 @@
+	// BeginInjectInto unice.epu.carpilot.kermeta.ConditionAspect#boolean isTrue(PolyCar) from unice.epu.carpilot.kermeta.DistanceConditionAspect
+		if (_self instanceof unice.epu.carpilot.ecore.carpilot.DistanceCondition){
+			result = unice.epu.carpilot.kermeta.DistanceConditionAspect.isTrue((unice.epu.carpilot.ecore.carpilot.DistanceCondition)_self,car);
+		} else
+		// EndInjectInto unice.epu.carpilot.kermeta.ConditionAspect#boolean isTrue(PolyCar) from unice.epu.carpilot.kermeta.DistanceConditionAspect

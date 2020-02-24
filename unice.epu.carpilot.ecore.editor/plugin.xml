@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated carpilot -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="unice.epu.carpilot.ecore.carpilot.presentation.CarpilotModelWizardID"
+            name="%_UI_CarpilotModelWizard_label"
+            class="unice.epu.carpilot.ecore.carpilot.presentation.CarpilotModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CarpilotModelFile.gif">
+         <description>%_UI_CarpilotModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated carpilot -->
+      <editor
+            id="unice.epu.carpilot.ecore.carpilot.presentation.CarpilotEditorID"
+            name="%_UI_CarpilotEditor_label"
+            icon="icons/full/obj16/CarpilotModelFile.gif"
+            extensions="carpilot"
+            class="unice.epu.carpilot.ecore.carpilot.presentation.CarpilotEditor"
+            contributorClass="unice.epu.carpilot.ecore.carpilot.presentation.CarpilotActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

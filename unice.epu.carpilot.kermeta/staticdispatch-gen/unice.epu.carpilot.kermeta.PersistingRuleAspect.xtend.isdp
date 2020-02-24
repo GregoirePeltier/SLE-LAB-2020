@@ -1,0 +1,5 @@
+	// BeginInjectInto unice.epu.carpilot.kermeta.RuleAspect#CarAction apply(PolyCar,CarAction) from unice.epu.carpilot.kermeta.PersistingRuleAspect
+		if (_self instanceof unice.epu.carpilot.ecore.carpilot.PersistingRule){
+			result = unice.epu.carpilot.kermeta.PersistingRuleAspect.apply((unice.epu.carpilot.ecore.carpilot.PersistingRule)_self,car,action);
+		} else
+		// EndInjectInto unice.epu.carpilot.kermeta.RuleAspect#CarAction apply(PolyCar,CarAction) from unice.epu.carpilot.kermeta.PersistingRuleAspect

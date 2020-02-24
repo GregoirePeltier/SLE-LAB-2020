@@ -1,0 +1,5 @@
+	// BeginInjectInto unice.epu.carpilot.kermeta.ConditionAspect#boolean isTrue(PolyCar) from unice.epu.carpilot.kermeta.ColorConditionAspect
+		if (_self instanceof unice.epu.carpilot.ecore.carpilot.ColorCondition){
+			result = unice.epu.carpilot.kermeta.ColorConditionAspect.isTrue((unice.epu.carpilot.ecore.carpilot.ColorCondition)_self,car);
+		} else
+		// EndInjectInto unice.epu.carpilot.kermeta.ConditionAspect#boolean isTrue(PolyCar) from unice.epu.carpilot.kermeta.ColorConditionAspect
